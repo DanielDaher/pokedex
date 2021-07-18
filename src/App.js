@@ -1,7 +1,8 @@
 import './App.css';
-import Pokefile from './pokemons';
+import Pokefile from './Pokefile';
 import pokemons from './data';
 import Home from './Home';
+import Favorites from './Favorites';
 import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
 
 function App() {
@@ -12,9 +13,11 @@ function App() {
       <div className="main">
         <div className='nav-bar'>
           <Link to="/" className="link">Home</Link>
+          <Link to="/favorites" className="link">Favorites</Link>
         </div>
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/favorites" component={Favorites} />
         <Route exact path='/pokedex' render={(props) => <Pokefile pokemons={pokemons} /> } />
       </Switch>
       </div>
