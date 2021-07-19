@@ -1,7 +1,6 @@
 import './App.css';
 import Pokefile from './Pokefile';
 import pokemons from './data';
-import Home from './Home';
 import Favorites from './Favorites';
 import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
 
