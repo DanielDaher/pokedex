@@ -2,6 +2,7 @@ import './App.css';
 import Pokefile from './Pokefile';
 import pokemons from './data';
 import Favorites from './Favorites';
+import Home from './Home';
 import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
           <Link to="/favorites" className="link">Favorites</Link>
         </div>
       <Switch>
-        <Route exact path="/favorites" component={Favorites} />
+        <Route exact path="/" component={ Home } />
+        <Route exact path="/favorites" component={ Favorites } />
         <Route exact path='/pokedex' render={(props) => <Pokefile pokemons={pokemons} /> } />
       </Switch>
       </div>

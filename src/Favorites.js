@@ -27,7 +27,7 @@ class Favorites extends React.Component {
     return (
     <div className="favorites-pokemons-info">
       <h4>{param.name}</h4>
-      <p>Onde este Pokemon pode ser encontrado?</p>
+      <p>Where can we found this Pokémon?</p>
       {param.foundAt.map((found) => (
       <>
         <h6>{found.location}</h6>

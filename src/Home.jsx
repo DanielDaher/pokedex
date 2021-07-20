@@ -1,14 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 export default class Home extends React.Component {
   render() {
     return (
-      <div className="main">
-        <nav className="nav-bar">
-          <Link to="/pokedex" className="link" >Clique aqui para ver o deck!</Link>
-        </nav>
-      </div>
+        <div>
+          <p className="nav-bar">Welcome to my Pokedex! Here you can see some Pokémons, acessing "Pokedex", and choose your favorite ones!</p>
+        </div>
     );
     }
 }
