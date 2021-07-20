@@ -17,7 +17,7 @@ class Favorites extends React.Component {
     const filtered = pokemons.filter((pokemon) => favoritesId.includes(pokemon.id));
     return filtered.map((pokemon) => (
       <div onMouseEnter={() => this.info(pokemon.name)} onMouseLeave={() => this.hide(pokemon.name)}>
-        <img alt={`imagem do ${pokemon.name}`} src={pokemon.image} />
+        <img alt={`imagem do ${pokemon.name}`} src={pokemon.image} width={this.state.mouseOn[pokemon.name] ? '190px' : ''} />
         <div>{this.state.mouseOn[pokemon.name] ? this.additionalInfo(pokemon) : ''}</div>
       </div>
         ));
@@ -28,12 +28,14 @@ class Favorites extends React.Component {
     <div className="favorites-pokemons-info">
       <h4>{param.name}</h4>
       <p>Where can we found this Pokémon?</p>
-      {param.foundAt.map((found) => (
-      <>
-        <h6>{found.location}</h6>
-        <img alt="localização" src={found.map} width="300px" />
-      </>
-      ))}
+      <div className="favorites-main-info">
+        {param.foundAt.map((found) => (
+          <div>
+          <h6>{found.location}</h6>
+          <img alt="localização" src={found.map} width="300px" />
+        </div>
+        ))}
+      </div>
     </div>);
   }
 

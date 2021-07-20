@@ -51,11 +51,11 @@ span {
 }
 
 .esquerda {
-  border-right-color: rgb(235, 235, 235);
+  border-right-color: rgb(190, 190, 190);
 }
 
 .direita {
-  border-left-color: rgb(235, 235, 235);
+  border-left-color: rgb(190, 190, 190);
 }
 
 .esquerda:hover {
@@ -64,6 +64,14 @@ span {
 
 .direita:hover {
   border-left-color: rgb(255, 255, 255);
+}
+
+.esquerda:active {
+  border-right-color: rgb(190, 190, 190);
+}
+
+.direita:active {
+  border-left-color: rgb(190, 190, 190);
 }
 
 li {
@@ -77,6 +85,17 @@ li {
   text-decoration: none;
   color: whitesmoke;
   font-size: 30px;
+}
+
+.link:hover {
+  /* font-size: 40px; */
+  color: black;
+  transition: 0.5s;
+}
+
+.link:active {
+  transition: 0.1s;
+  font-size: 40px;
 }
 
 .main {
@@ -112,6 +131,19 @@ button {
 .favorites-pokemons {
   display: flex;
   flex-wrap: wrap;
+}
+
+.favorites-pokemons-info {
+  margin-bottom: 20px;
+}
+
+.favorites-main-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.favorites-main-info * {
+  padding: 10px;
 }
 
 .home-paragraph {
