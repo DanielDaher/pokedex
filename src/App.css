@@ -7,7 +7,7 @@ body {
   background-image: url("https://cdn.pixabay.com/photo/2020/05/04/11/04/pokeball-5128709_960_720.jpg");
   background-repeat: no-repeat;
   background-size: 50%;
-  background-position: center;
+  background-position: 43% 50%;
   background-attachment: fixed;
   color: whitesmoke;
 }
@@ -88,7 +88,7 @@ li {
   min-height: 95vh;
 }
 
-.nav-bar {
+.nav-bar, .home-paragraph {
   display: flex;
   margin-bottom: 80px;
   background-color: rgba(235, 3, 3, 0.7);
@@ -112,4 +112,8 @@ button {
 .favorites-pokemons {
   display: flex;
   flex-wrap: wrap;
+}
+
+.home-paragraph {
+  width: 101%;
 }
