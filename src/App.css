@@ -12,6 +12,11 @@ body {
   color: whitesmoke;
 }
 
+footer a {
+  text-decoration: none;
+  color: rgb(235, 3, 3);
+}
+
 .Poks {
   display: flex;
   flex-direction: column;
@@ -40,6 +45,10 @@ body {
   margin-bottom: 10px;
   background-color: rgb(212, 212, 212);
   color: black;
+}
+
+.fact-button:hover {
+  background-color: white;
 }
 
 .blocos {

@@ -22,7 +22,7 @@ function App() {
       </Switch>
       </div>
     </BrowserRouter>
-    <footer>Made By Daniel Daher</footer>
+    <footer>Made By <a href="https://github.com/DanielDaher" target="_blank" rel="noreferrer">Daniel Daher</a></footer>
   </div>
   );
 }
