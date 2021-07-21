@@ -27,13 +27,25 @@ footer a {
   border-radius: 5%;
   margin: 36px;
   background-color: rgba(235, 3, 3, 0.7);
+  margin-top: 1px;
 }
 
-.fav-button, .fact-button {
+.unfav-button, .fact-button {
   align-self: center;
   align-items: center;
   background-color: black;
   color: white;
+  display: flex;
+  font-size: 20px;
+  height: 50px;
+  justify-content: center;
+}
+
+.fav-button {
+  align-self: center;
+  align-items: center;
+  background-color: rgb(255, 196, 0);
+  color: black;
   display: flex;
   font-size: 20px;
   height: 50px;
@@ -60,6 +72,8 @@ footer a {
 .center {
   display: flex;
   justify-content: center;
+  /* background-color: green; */
+  margin-top: -10px;
 }
 
 span {
