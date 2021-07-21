@@ -12,7 +12,6 @@ class Pokefile extends React.Component {
       number: 0,
       info: '',
       showInfo: false,
-      classButton: 'fav-button' 
       }
       this.next = this.next.bind(this);
       this.preview = this.preview.bind(this);
@@ -91,7 +90,7 @@ class Pokefile extends React.Component {
     }
 
     render() {
-      const { info, showInfo, classButton } = this.state;
+      const { info, showInfo } = this.state;
       const { name, type, averageWeight, image, summary, id } = this.state.item;
       const { favoritesId } = this.props;
         return (
