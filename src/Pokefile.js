@@ -106,8 +106,7 @@ class Pokefile extends React.Component {
             </div>
             <span className='direita' onClick={this.next}></span>
             </div>
-            <button onClick={() => this.moreInfo(summary)}>Fun Fact</button>
-            <div className="info">{ showInfo ? info : '' }</div>
+            { showInfo ? <div className="info">{info}</div> : <button className="fact-button" onClick={() => this.moreInfo(summary)}>Fun Fact</button>}
           </div>
       )
 }
