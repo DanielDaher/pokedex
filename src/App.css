@@ -183,3 +183,20 @@ button {
 .home-paragraph {
   width: 101%;
 }
+
+@media screen and (max-width: 944px) {
+
+  html {
+    min-width: 100vh;
+    min-height: 100vh;
+  }
+
+  body, .App, .main {
+    width: 100vh;
+  }
+
+  .main, body {
+    height: 100vh;
+  }
+  
+}

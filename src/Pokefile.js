@@ -94,7 +94,7 @@ class Pokefile extends React.Component {
       const { name, type, averageWeight, image, summary, id } = this.state.item;
       const { favoritesId } = this.props;
         return (
-          <div>
+          <div classname="pokedex-main">
             <div className='center'>
               <span className="esquerda" onClick={this.preview}></span>
               <div className='Poks'>
