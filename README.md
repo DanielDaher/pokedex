@@ -1,4 +1,4 @@
-# Context API - Rick and Morty Memory Game
+# POKEDEX
 Boas vindas ao Jogo da Memória do Rick and Morty, onde você pode tentar impressionar o Rick (se vencer).
 
 ## Objetivos:
